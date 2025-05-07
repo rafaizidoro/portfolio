@@ -1,0 +1,275 @@
+/* ===== HEADER STYLES ===== */
+header {
+  background-color: #159e7c;
+  padding: 24px;
+  text-align: center;
+}
+
+header h1 {
+  color: black;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+header h2 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* ===== ICONS ===== */
+.bi {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* ===== NAVIGATION MENU ===== */
+#contact ul, nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sticky-top {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1020; /* Keep above other elements */
+}
+
+.nav-link {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+/* ===== GENERAL SECTION STYLING ===== */
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+/* ===== FOOTER STYLES ===== */
+footer {
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+  line-height: 0.8;
+}
+
+/* ===== ABOUT SECTION STYLES ===== */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  gap: 20px;
+  padding: 20px;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #159e7c;
+}
+
+.about-text {
+  max-width: 500px;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* ===== PROJECTS SECTION STYLES ===== */
+#projects {
+  padding: 40px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3); /* Custom shadow */
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  color: #159e7c;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.project-image {
+  width: 100%;               /* take full width of card */
+  max-width: 300px;          /* limit to 300px wide */
+  height: 180px;             /* fixed height */
+  object-fit: cover;         /* crop & preserve aspect ratio */
+  border-radius: 8px;        /* optional: smooth corners */
+}
+
+/* ===== CONTACT SECTION STYLES ===== */
+#contact {
+  padding: 40px;
+  background-color: #e8f5e9;
+  text-align: center;
+}
+
+#contact h2 {
+  border-bottom: 3px dotted #159e7c;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+/* Shared layout for contact links and form */
+.contact-card,
+.contact-form {
+  flex: 1 1 300px;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Contact links list */
+.contact-links {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.contact-links li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* ===== CONTACT FORM STYLES ===== */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 1px;
+  font-weight: bold;
+}
+
+.form-field input,
+.form-field textarea {
+  border: 1px solid #ccc;
+  border-bottom: 1px solid;
+  border-radius: 0;
+  width: 98%;
+  background: transparent;
+}
+
+/* Submit button */
+button[type="submit"] {
+  background-color: #159e7c;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Centering the button */
+.contact-form button[type="submit"] {
+  display: block;
+  margin: 20px auto 0 auto;
+}
+
+/* Hover effect for button */
+button[type="submit"]:hover {
+  background-color: #0d7e63;
+}
+
+/* ===== Responsive Tweaks for Mobile ===== */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  header h2 {
+    font-size: 18px;
+  }
+
+  .sobre-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .foto-perfil {
+    width: 150px;
+    height: 150px;
+  }
+
+  .container-projetos,
+  .container-contato {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-projeto,
+  .card-contato,
+  .form-contato {
+    width: 90%;
+  }
+}
