@@ -4,7 +4,7 @@ Welcome to my personal developer portfolio, built using **HTML**, **CSS**, and *
 
 This site showcases my projects, skills, and contact information — all with a clean, responsive layout that works on desktop and mobile.
 
-> 🔗 Live site: [https://rafaelizidoro.github.io/portfolio](https://rafaelizidoro.github.io/portfolio)
+> 🔗 Live site: https://rafaizidoro.github.io/portfolio/
 
 ---
 
