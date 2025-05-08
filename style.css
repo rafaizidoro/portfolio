@@ -273,3 +273,49 @@ button[type="submit"]:hover {
     width: 90%;
   }
 }
+
+/* ===== DARK MODE OVERRIDES ===== */
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode a {
+  color: #90caf9;
+}
+
+.dark-mode header,
+.dark-mode nav,
+.dark-mode footer,
+.dark-mode h1 {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.dark-mode section {
+  background-color: #1a1a1a;
+}
+
+.dark-mode #projects,
+.dark-mode #contact {
+  background-color: #1a1a1a !important;
+}
+
+.dark-mode .card,
+.dark-mode .contact-form,
+.dark-mode .contact-card {
+  background-color: #2b2b2b !important;
+  border-color: #444;
+  color: #f1f1f1;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #333; 
+  color: #f1f1f1;
+  border-color: #555;
+}
+
+.dark-mode button {
+  background-color: #0d7e63;
+}
